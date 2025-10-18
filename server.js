@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.post("/submit", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycbxxxxx/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbxZHu8u7CViBQSvwNizVGYpEFGv8e1mDw31atiVytrRGO9uPKXB4t-4NZAnPm5PKrqi/exec"; // Replace with your Apps Script Web App URL
 
     const response = await fetch(googleUrl, {
       method: "POST",
