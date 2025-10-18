@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.post("/submitContact", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycbwwRYttnt-McryBJEnyEz1Exz-6CejwGe_XQvIIF9IFkq4Th4TWrqjpDuZrodisVuscIA/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbyYNiatPYUVP2rGkOU_PiCZ_rUhtVGltsbP2tClC2napVOL1HXQVSRUOK73k3fHkO9D3w/exec"; // Replace with your Apps Script Web App URL
     console.log(req.body);
     const response = await fetch(googleUrl, {
       method: "POST",
