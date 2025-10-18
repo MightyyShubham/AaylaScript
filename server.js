@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.post("/submitContact", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycbyb4Jh0PmAG5xChjmKiJO6NG6Jujqfn6p10WypCbjTBeKTJqILPYT_bAvc8Nynk91JZDA/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbzf1xiiAhCZ9rcnPNadn0R9nBJ-Og3mHT0VACK85X818va2v0MobYcZny4JN1oaS52Iow/exec"; // Replace with your Apps Script Web App URL
     console.log(req.body);
     const response = await fetch(googleUrl, {
       method: "POST",
@@ -25,7 +25,7 @@ app.post("/submitContact", async (req, res) => {
 
 app.post("/submitCustom", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycbzWJ_3vZUCBvUfXwombeWi-Y1GdzbcnSHH-YO_N5zh9A5XaSkY8G8zrISVxPf7pLnsxwg/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbyqXpOF9vUfI9g53Se4FkQrSSLQezkrKhjRXwfEs5NlAtkp90wCdnUCQcFcUeVa3zO8jg/exec"; // Replace with your Apps Script Web App URL
     console.log(req.body);
     const response = await fetch(googleUrl, {
       method: "POST",
@@ -41,7 +41,7 @@ app.post("/submitCustom", async (req, res) => {
 
 app.post("/submitFeedback", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycbyfEKH5KDEHaJa46HVezeUH3Tfk5A75WTZRBJCbGc1IOLLRnGlZpbd4zTnBAURFVQU9UA/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbwz6dc5181DNa5YbAPlU4hktCf1asBnb2f1W3MrIItfTfkts2g-Vz6LjLml-rdHqYjSlg/exec"; // Replace with your Apps Script Web App URL
     
     console.log(req.body);
     const response = await fetch(googleUrl, {
