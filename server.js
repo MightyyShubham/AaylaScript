@@ -13,7 +13,7 @@ app.post("/submitContact", async (req, res) => {
     const response = await fetch(googleUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: req.body,
+      body: JSON.stringify(req.body),
     });
 
     const text = await response.text();
@@ -30,7 +30,7 @@ app.post("/submitCustom", async (req, res) => {
     const response = await fetch(googleUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: req.body,
+      body: JSON.stringify(req.body),
     });
     const text = await response.text();
     res.status(200).send(text);
@@ -47,7 +47,7 @@ app.post("/submitFeedback", async (req, res) => {
     const response = await fetch(googleUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: req.body,
+      body: JSON.stringify(req.body),
     });
     const text = await response.text();
     res.status(200).send(text);
