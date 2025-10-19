@@ -6,9 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+//it is working for CustomDesign
 app.post("/submitContact", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycbytu_gjy6C9SGwKL_eXZrnc2SfLojRaLhruGOKMxsMhP6IFh2NdA2XKV2R-TzbA9yWuEA/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbyuMyw-TNlB1a9xD2eLFYvxX8T96h8PZJPE20SdxqdU19MzStqugwNnb-v8KtE6c4cSBg/exec"; // Replace with your Apps Script Web App URL
     console.log(req.body);
     const response = await fetch(googleUrl, {
       method: "POST",
@@ -25,7 +26,7 @@ app.post("/submitContact", async (req, res) => {
 
 app.post("/submitCustom", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycbyM8Q7Cq7iULhj48QsxRYHO9iEiWU0srlzPuso4z-L4ncAs4xxtpEX-Q5kkEtz7qRWMIQ/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbyBhVTAKwVnWJAhYMxnt92ZhUPRoblR7qX5epqvc7xFXjxlcNCiATY7gq7C5bInVLr8/exec"; // Replace with your Apps Script Web App URL
     console.log(req.body);
     const response = await fetch(googleUrl, {
       method: "POST",
@@ -41,7 +42,7 @@ app.post("/submitCustom", async (req, res) => {
 
 app.post("/submitFeedback", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycby6L6wEpRshY7W4SmpRtjAcQYXE-H9Ts0VdTQh76CVt1uFhBS_A8217V2ioY3mbjahmpg/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbxH88zOH02_OLloN9iFIKStFNtkcHalnyAgWTQoxPYwPt2qB5dV_TN7DP-sSjS9HrzU/exec"; // Replace with your Apps Script Web App URL
     
     console.log(req.body);
     const response = await fetch(googleUrl, {
