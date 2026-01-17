@@ -60,7 +60,7 @@ app.post("/submitFeedback", async (req, res) => {
 //this is for Export PAge
 app.post("/submitExportDetails", async (req, res) => {
   try {
-    const googleUrl = "https://script.google.com/macros/s/AKfycbwFY0zW_eSwix9a0b1FJK_TQeDQHmj3IJszoV8ozcASq0RgxYIuLi4-9FDGpBDuPT9cTQ/exec"; // Replace with your Apps Script Web App URL
+    const googleUrl = "https://script.google.com/macros/s/AKfycbwgwECYlSLOXgpOgdvF12piC9NyIC638shRoGOF00rXnZpsqXCHdrenaw6G4OuhLCD16A/exec"; // Replace with your Apps Script Web App URL
     
     console.log(req.body);
     const response = await fetch(googleUrl, {
